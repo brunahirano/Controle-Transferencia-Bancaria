@@ -13,16 +13,13 @@ import { Router } from '@angular/router';
 
 
 export class InicioComponent implements OnInit {
-//uma variável que contém o modelo de objeto Tarefa que acabamos que criar no tarefa.service.ts
+
   ListarContas: Conta[]
 
-  //instanciando a classe TarefaService que importamos aqui
-  //dentro do construtor nós declaramos (passamos como parâmetro) a variável tarefaService do tipo TarefaService e a variável router para usar o Router
   constructor(private tarefasService: TarefasService, private router: Router) {
     this.ListarContas = []
   }
 
-  //ao iniciar esse componente deve-se executar a função listarTarefas, que acabamos de criar logo abaixo. void(vazio)
   ngOnInit(): void {
     this.listarContas()
   }
@@ -36,7 +33,6 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  //função para excluir uma tarefe pelo seu id, exclui e chama a função listarTarefas(), que vai para carregar a página com a lista de tarefas
   excluir(id:any){
     this.tarefasService.excluirConta(id).subscribe({
       next: (resultado) => {console.log("Conta de usuário excluído")
@@ -46,7 +42,7 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  //função editar, ao clicar no botão editar, ele abre a rota edit/:id, que tem o html modificar.html, ou seja, ao clicar em editar abre o form editar
+  
   editar(id:any){
     this.router.navigate(['/editar/' + id])
   }

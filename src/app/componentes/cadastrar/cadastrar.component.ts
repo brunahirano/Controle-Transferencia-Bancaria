@@ -26,7 +26,7 @@ export class CadastrarComponent implements OnInit {
   }
 
   cadastrar(){
-    //aqui deletei o atributo id_transferencia, pois esse atributo é criado de forma automática no banco de dados
+   
     delete this.conta.id_transferencia
 
     //aqui fizemos a inserção da nova tarefa no banco de dados
