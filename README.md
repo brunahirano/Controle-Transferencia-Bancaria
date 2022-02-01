@@ -6,6 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+# Projeto controle de tranferência bancária
+Uso do banco de dados MySql
+
 ![enter image description here](https://github.com/brunahirano/Controle-Transferencia-Bancaria/blob/master/assets/telainicial.png)
 
 ![enter image description here](https://github.com/brunahirano/Controle-Transferencia-Bancaria/blob/master/assets/TELA2.png)
